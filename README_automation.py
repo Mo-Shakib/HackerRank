@@ -33,7 +33,7 @@ readme_file.write("""
 lastUpdate = datetime.now()
 lastUpdate = lastUpdate.strftime("%d/%m/%y")
 readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-{lastUpdate}-brightgreen.svg"></p> \n')
-
+readme_file.write('\n')
 
 for root, subdirectories, files in os.walk(directory):
     if any(folder in root for folder in w_folders) and len(subdirectories) > 1:
