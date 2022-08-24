@@ -27,13 +27,12 @@ readme_file.write("""
 	If you are interested in helping or have a solution in a different language feel free to make a pull request.
 </p>
 <p align="right">
-	<img src="https://img.shields.io/badge/Language-Python-orange.svg"> \n
-""")
+	<img src="https://img.shields.io/badge/Language-Python-orange.svg">""")
 
 lastUpdate = datetime.now()
 lastUpdate = lastUpdate.strftime("%d/%m/%y")
 readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-{lastUpdate}-brightgreen.svg"></p> \n')
-readme_file.write('\n')
+
 
 for root, subdirectories, files in os.walk(directory):
     if any(folder in root for folder in w_folders) and len(subdirectories) > 1:
@@ -46,11 +45,13 @@ sorted_folders = sorted(dictionary_items)
 
 for f in sorted_folders:
     # ---------- Writing parent folders ----------
-    readme_file.write(f'### :open_file_folder: [{f[0].split(".")[1]}]({f[0]})\n')
+    PF_name = urllib.parse.quote(f[0])
+    readme_file.write(f'### :open_file_folder: [{f[0].split(".")[1]}]({PF_name})\n')
     if len(f[1]) > 0:
         for i in f[1]:
             #------------- Writing sub folders ------------
-            readme_file.write(f'- ###### :open_file_folder: [{i.split(".")[1]}]({f[0]}\\{i})\n')
+	    subf_name = urllib.parse.quote(i)
+            readme_file.write(f'- ###### :open_file_folder: [{i.split(".")[1]}]({PF_name}\\{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
