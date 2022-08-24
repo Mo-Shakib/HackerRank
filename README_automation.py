@@ -27,7 +27,7 @@ readme_file.write("""
 	If you are interested in helping or have a solution in a different language feel free to make a pull request.
 </p>
 <p align="right">
-	<img src="https://img.shields.io/badge/Language-Python-orange.svg">
+	<img src="https://img.shields.io/badge/Language-Python-orange.svg"> \n
 """)
 
 lastUpdate = datetime.now()
