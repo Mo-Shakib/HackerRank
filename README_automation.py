@@ -53,7 +53,7 @@ for f in sorted_folders:
         for i in f[1]:
             #------------- Writing sub folders ------------
             subf_name = urllib.parse.quote(i)
-            readme_file.write(f'- #### :open_file_folder: [{i.split(".")[1]}]({PF_name}\\{subf_name})\n')
+            readme_file.write(f'- #### :open_file_folder: [{i.split(".")[1]}]({PF_name}//{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
