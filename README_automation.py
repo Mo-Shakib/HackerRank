@@ -4,50 +4,81 @@ from git.objects.commit import Commit
 import urllib.parse
 
 directory = os.path.dirname(os.path.realpath(__file__))
+
+folderTree = {}
 w_folders = ['1. Algorithms', '2. Data Structures','3. Mathematics']
-all_folders_files = []
-readme_file = open('README.md', 'w')
-readme_file.write('# Automated README\n')
+ignoreFiles = ['.DS_Store', 'README.md']
+fileTyp = {'py':'Python','cpp':'C++','c':'C','js':'JavaScript','java':'Java'}
+totalSolved = 0
 dir_path = os.path.dirname(os.path.realpath(__file__))
 repo = git.Repo(dir_path)
+            
+
+readme_file = open('README.md', 'w')
+readme_file.write(""" 
+<p align="center">
+	<a href="https://www.hackerrank.com/mo_shakib"><img src="https://cloud.githubusercontent.com/assets/19765741/25342064/d17a563c-28d8-11e7-83fc-763d4ab4820a.jpg" ></a>
+</p>
+<p align="center">
+   <b> Solutions to problems on HackerRank. </b>
+</p>
+
+<p align="right">
+	If you are interested in helping or have a solution in a different language feel free to make a pull request.
+</p>
+<p align="right">
+	<img src="https://img.shields.io/badge/Language-Python-orange.svg">
+""")
+
+lastUpdate = datetime.now()
+lastUpdate = lastUpdate.strftime("%d/%m/%y")
+readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-{lastUpdate}-brightgreen.svg"></p> \n')
+
 
 for root, subdirectories, files in os.walk(directory):
-    if any(folder in root for folder in w_folders):
-        all_folders_files.append([root] + [subdirectories] + [files])
-    
-for folder in all_folders_files:
-    if len(folder) != 0:
-        folder_name = folder[0].split('/')[-1]
-        print(folder_name)
-        readme_file.write(f'#### :open_file_folder: [{folder_name}]({folder_name})\n')
-        print('-'*(len(folder[0])))
+    if any(folder in root for folder in w_folders) and len(subdirectories) > 1:
+        subdirectories.sort(key=lambda x: int(x[0].split('/')[-1].split('.')[0]))
+        folder_name = root.split('/')[-1]
+        folderTree[folder_name] = subdirectories
         
-        for subfolder in folder[1]:
-            readme_file.write(f'- ##### :open_file_folder: [{subfolder}]({folder[0]}\\{subfolder})\n')
-            print('   |--',subfolder)
-            print('Writeing folders')
-            print(subfolder)
-        
-        table_of_contents = open(folder[0] + '/README.md', 'w')
-        table_of_contents.write(f'### Table of Contents\n')
-        for file in folder[2]:
-            if file != 'README.md':
-                # table_of_contents.write(f'1. :page_facing_up: [{file[:-3]}]({folder_name}/{file})\n')
-                fileName = urllib.parse.quote(file)
+dictionary_items = folderTree.items()
+sorted_folders = sorted(dictionary_items)
 
-                table_of_contents.write(f'1. :page_facing_up: [{file[:-3]}]({fileName})\n')
-                print('   |--',file)
-        table_of_contents.close()
-        
+for f in sorted_folders:
+    # ---------- Writing parent folders ----------
+    readme_file.write(f'### :open_file_folder: [{f[0].split(".")[1]}]({f[0]})\n')
+    if len(f[1]) > 0:
+        for i in f[1]:
+            #------------- Writing sub folders ------------
+            readme_file.write(f'- ###### :open_file_folder: [{i.split(".")[1]}]({f[0]}\\{i})\n')
+            
+            #------------- Making table of content ------------------
+            filesPath = f'{directory}//{f[0]}//{i}'
+            filenames = next(os.walk(filesPath), (None, None, []))[2]
+            table_of_contents = open(filesPath + '/README.md', 'w')
+            table_of_contents.write(f'### Table of Contents\n')
+            
+            for i in filenames:
+                if i not in ignoreFiles:
+                    print('File:', i)
+                    fileName = urllib.parse.quote(i)
+                    tablefilename = i.split('.')[0]
+                    f_type = i.split('.')[-1]
+                    table_of_contents.write(f'- :page_facing_up: __{tablefilename.capitalize()}__ - [{fileTyp[f_type]}]({fileName})\n')
+                    totalSolved += 1
+            table_of_contents.close()
+            # ----------End of making take of content -------------------
+
 readme_file.close()
 time.sleep(1)
+
 # Push to GitHub
 
-# commit_message = "Updated by automated commit 🤖"
-# repo.git.add('--all')
-# repo.git.commit('-m', commit_message, author='Shakib')
-# print('[*] Pushing......')
-# origin = repo.remote(name='origin')
-# origin.push()
+commit_message = "Updated by automated commit 🤖"
+repo.git.add('--all')
+repo.git.commit('-m', commit_message, author='Shakib')
+print('[*] Pushing......')
+origin = repo.remote(name='origin')
+origin.push()
 
 print("[=] Successfull")
