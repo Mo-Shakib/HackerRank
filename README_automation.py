@@ -50,7 +50,7 @@ for f in sorted_folders:
     if len(f[1]) > 0:
         for i in f[1]:
             #------------- Writing sub folders ------------
-	    subf_name = urllib.parse.quote(i)
+	    	subf_name = urllib.parse.quote(i)
             readme_file.write(f'- ###### :open_file_folder: [{i.split(".")[1]}]({PF_name}\\{subf_name})\n')
             
             #------------- Making table of content ------------------
