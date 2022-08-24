@@ -15,5 +15,5 @@
 
 
 # :open_file_folder: [ Algorithms](1.%20Algorithms)
-- #### :open_file_folder: [ Warmup](1.%20Algorithms\1.%20Warmup)
-- #### :open_file_folder: [ Implementation](1.%20Algorithms\2.%20Implementation)
+- #### :open_file_folder: [ Warmup](1.%20Algorithms//1.%20Warmup)
+- #### :open_file_folder: [ Implementation](1.%20Algorithms//2.%20Implementation)
