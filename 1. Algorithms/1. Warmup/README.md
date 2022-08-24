@@ -1,0 +1,10 @@
+### Table of Contents
+- :page_facing_up: __Time conversion__ - [Python](Time%20Conversion.py)
+- :page_facing_up: __Plus minus__ - [Python](Plus%20Minus.py)
+- :page_facing_up: __A very big sum__ - [Python](A%20Very%20Big%20Sum.py)
+- :page_facing_up: __Birthday cake candles__ - [Python](Birthday%20Cake%20Candles.py)
+- :page_facing_up: __Mini-max sum__ - [Python](Mini-Max%20Sum.py)
+- :page_facing_up: __Diagonal difference__ - [Python](Diagonal%20Difference.py)
+- :page_facing_up: __Compare the triplets__ - [Python](Compare%20the%20Triplets.py)
+- :page_facing_up: __Staircase__ - [Python](Staircase.py)
+- :page_facing_up: __Simple array sum__ - [Python](Simple%20Array%20Sum.py)
