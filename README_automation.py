@@ -23,7 +23,7 @@ readme_file.write("""
    <b> Solutions to problems on HackerRank. </b>
 </p>
 
-<p align="right">
+<p align="center">
 	If you are interested in helping or have a solution in a different language feel free to make a pull request.
 </p>
 <p align="right">
@@ -48,7 +48,7 @@ sorted_folders = sorted(dictionary_items)
 for f in sorted_folders:
     # ---------- Writing parent folders ----------
     PF_name = urllib.parse.quote(f[0])
-    readme_file.write(f'# :open_file_folder: [{f[0].split(".")[1]}]({PF_name})\n')
+    readme_file.write(f'## :open_file_folder: [{f[0].split(".")[1]}]({PF_name})\n')
     if len(f[1]) > 0:
         for i in f[1]:
             #------------- Writing sub folders ------------
