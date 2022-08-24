@@ -27,7 +27,8 @@ readme_file.write("""
 	If you are interested in helping or have a solution in a different language feel free to make a pull request.
 </p>
 <p align="right">
-	<img src="https://img.shields.io/badge/Language-Python-orange.svg">""")
+	<img src="https://img.shields.io/badge/Language-Python-orange.svg">
+""")
 
 lastUpdate = datetime.now()
 lastUpdate = lastUpdate.strftime("%d/%m/%y")
@@ -50,7 +51,7 @@ for f in sorted_folders:
     if len(f[1]) > 0:
         for i in f[1]:
             #------------- Writing sub folders ------------
-	    subf_name = urllib.parse.quote(i)
+            subf_name = urllib.parse.quote(i)
             readme_file.write(f'- ###### :open_file_folder: [{i.split(".")[1]}]({PF_name}\\{subf_name})\n')
             
             #------------- Making table of content ------------------
