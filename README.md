@@ -12,7 +12,7 @@
 <p align="right">
     <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
 	<img src="https://img.shields.io/badge/Language-Python-orange.svg">
-<img src="https://img.shields.io/badge/Latest%20Update-01/09/22-brightgreen.svg"></p> 
+<img src="https://img.shields.io/badge/Latest%20Update-02/09/22-brightgreen.svg"></p> 
 
 
 ## :open_file_folder: [ Algorithms](1.%20Algorithms)
