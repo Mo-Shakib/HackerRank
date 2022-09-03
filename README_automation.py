@@ -34,11 +34,6 @@ readme_file.write("""
 </p>
 """)
 
-
-# lastUpdate = datetime.now()
-# lastUpdate = lastUpdate.strftime("%d/%m/%y")
-# readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-01-09-2022-brightgreen.svg"></p> \n')
-
 readme_file.write('\n')
 readme_file.write('\n')
 
@@ -56,13 +51,13 @@ for f in sorted_folders:
     # f[0] ---> Parent folders
 
     PF_name = urllib.parse.quote(f[0])
-    readme_file.write(f'# :ledger: [{f[0].split(".")[1].lstrip()}]({PF_name})\n')
+    readme_file.write(f'# 📒 [{f[0].split(".")[1].lstrip()}]({PF_name})\n')
     if len(f[1]) > 0:
         # f[1] - stores all the sub-folders in the main folders
         for i in f[1]:
             #------------- Writing sub folders ------------
             subf_name = urllib.parse.quote(i)
-            readme_file.write(f'- ### :open_file_folder: [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
+            readme_file.write(f'- ### 📁 [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
@@ -74,7 +69,7 @@ for f in sorted_folders:
                     fileName = urllib.parse.quote(j)
                     tablefilename = j.split('.')[0]
                     f_type = j.split('.')[-1]
-                    readme_file.write(f'    - [x] :page_facing_up: [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
+                    readme_file.write(f'    - [x] 📃 [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
                     totalSolved += 1
             # ------- End of writing index to main readme file -------
             
