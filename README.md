@@ -15,6 +15,20 @@
     <img src="https://img.shields.io/badge/Language-Python-orange.svg">
 
 
-## :open_file_folder: [ Algorithms](1.%20Algorithms)
-- #### :open_file_folder: [ Warmup](1.%20Algorithms//1.%20Warmup)
-- #### :open_file_folder: [ Implementation](1.%20Algorithms//2.%20Implementation)
+# :ledger: [Algorithms](1.%20Algorithms)
+- #### :open_file_folder: [Warmup](1.%20Algorithms//1.%20Warmup)
+    - [x] :page_facing_up: [_Time conversion_](1.%20Algorithms/1.%20Warmup/Time%20Conversion.py)
+    - [x] :page_facing_up: [_Plus minus_](1.%20Algorithms/1.%20Warmup/Plus%20Minus.py)
+    - [x] :page_facing_up: [_A very big sum_](1.%20Algorithms/1.%20Warmup/A%20Very%20Big%20Sum.py)
+    - [x] :page_facing_up: [_Birthday cake candles_](1.%20Algorithms/1.%20Warmup/Birthday%20Cake%20Candles.py)
+    - [x] :page_facing_up: [_Mini-max sum_](1.%20Algorithms/1.%20Warmup/Mini-Max%20Sum.py)
+    - [x] :page_facing_up: [_Diagonal difference_](1.%20Algorithms/1.%20Warmup/Diagonal%20Difference.py)
+    - [x] :page_facing_up: [_Compare the triplets_](1.%20Algorithms/1.%20Warmup/Compare%20the%20Triplets.py)
+    - [x] :page_facing_up: [_Staircase_](1.%20Algorithms/1.%20Warmup/Staircase.py)
+    - [x] :page_facing_up: [_Simple array sum_](1.%20Algorithms/1.%20Warmup/Simple%20Array%20Sum.py)
+- #### :open_file_folder: [Implementation](1.%20Algorithms//2.%20Implementation)
+    - [x] :page_facing_up: [_Cats and a mouse_](1.%20Algorithms/2.%20Implementation/Cats%20and%20a%20Mouse.py)
+    - [x] :page_facing_up: [_Bill division_](1.%20Algorithms/2.%20Implementation/Bill%20Division.py)
+    - [x] :page_facing_up: [_Number line jumps_](1.%20Algorithms/2.%20Implementation/Number%20Line%20Jumps.py)
+    - [x] :page_facing_up: [_Grading students_](1.%20Algorithms/2.%20Implementation/Grading%20Students.py)
+    - [x] :page_facing_up: [_Apple and orange_](1.%20Algorithms/2.%20Implementation/Apple%20and%20Orange.py)
