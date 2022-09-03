@@ -35,6 +35,7 @@ readme_file.write("""
 # lastUpdate = datetime.now()
 # lastUpdate = lastUpdate.strftime("%d/%m/%y")
 # readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-01-09-2022-brightgreen.svg"></p> \n')
+
 readme_file.write('\n')
 readme_file.write('\n')
 
@@ -49,31 +50,44 @@ sorted_folders = sorted(dictionary_items)
 
 for f in sorted_folders:
     # ---------- Writing parent folders ----------
+    # f[0] ---> Parent folders
+
     PF_name = urllib.parse.quote(f[0])
-    readme_file.write(f'## :open_file_folder: [{f[0].split(".")[1]}]({PF_name})\n')
+    readme_file.write(f'# :ledger: [{f[0].split(".")[1].lstrip()}]({PF_name})\n')
     if len(f[1]) > 0:
+        # f[1] - stores all the sub-folders in the main folders
         for i in f[1]:
             #------------- Writing sub folders ------------
             subf_name = urllib.parse.quote(i)
-            readme_file.write(f'- #### :open_file_folder: [{i.split(".")[1]}]({PF_name}//{subf_name})\n')
+            readme_file.write(f'- #### :open_file_folder: [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
             filenames = next(os.walk(filesPath), (None, None, []))[2]
+            
+            # ----------- Writing file index to main README.md --------------
+            for j in filenames:
+                if j not in ignoreFiles:
+                    fileName = urllib.parse.quote(j)
+                    tablefilename = j.split('.')[0]
+                    f_type = j.split('.')[-1]
+                    readme_file.write(f'    - [x] :page_facing_up: [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
+                    totalSolved += 1
+            # ------- End of writing index to main readme file -------
+            
             table_of_contents = open(filesPath + '/README.md', 'w')
             table_of_contents.write(f'### Table of Contents\n')
             
             for i in filenames:
                 if i not in ignoreFiles:
-                    print('File:', i)
                     fileName = urllib.parse.quote(i)
                     tablefilename = i.split('.')[0]
                     f_type = i.split('.')[-1]
                     table_of_contents.write(f'- :page_facing_up: __{tablefilename.capitalize()}__ - [{fileTyp[f_type]}]({fileName})\n')
-                    totalSolved += 1
             table_of_contents.close()
             # ----------End of making take of content -------------------
 
+print('Total:',totalSolved)
 readme_file.close()
 time.sleep(1)
 
