@@ -57,7 +57,7 @@ for f in sorted_folders:
         for i in f[1]:
             #------------- Writing sub folders ------------
             subf_name = urllib.parse.quote(i)
-            readme_file.write(f'- ### 📁 [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
+            readme_file.write(f'### &nbsp;&nbsp; 📁 [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
@@ -69,7 +69,7 @@ for f in sorted_folders:
                     fileName = urllib.parse.quote(j)
                     tablefilename = j.split('.')[0]
                     f_type = j.split('.')[-1]
-                    readme_file.write(f'    - [x] 📃 [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
+                    readme_file.write(f'&nbsp;&nbsp;&nbsp;&nbsp; 📃 [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
                     totalSolved += 1
             # ------- End of writing index to main readme file -------
             
