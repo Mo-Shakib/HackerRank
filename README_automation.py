@@ -31,9 +31,9 @@ readme_file.write("""
 	<img src="https://img.shields.io/badge/Language-Python-orange.svg">
 """)
 
-lastUpdate = datetime.now()
-lastUpdate = lastUpdate.strftime("%d/%m/%y")
-readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-{lastUpdate}-brightgreen.svg"></p> \n')
+# lastUpdate = datetime.now()
+# lastUpdate = lastUpdate.strftime("%d/%m/%y")
+readme_file.write(f'<img src="https://img.shields.io/badge/Latest%20Update-01-09-2022-brightgreen.svg"></p> \n')
 readme_file.write('\n')
 readme_file.write('\n')
 
