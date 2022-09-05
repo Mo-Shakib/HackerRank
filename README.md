@@ -13,8 +13,7 @@
     <img src="https://img.shields.io/badge/Language-Python-orange.svg">
     <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
 </p>
-
-
+<hr>
 # 📒 [Algorithms](1.%20Algorithms)
 - ### 📁 [Warmup](1.%20Algorithms//1.%20Warmup)
 	- [x] 📃 [_Time conversion_](1.%20Algorithms/1.%20Warmup/Time%20Conversion.py)
