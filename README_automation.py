@@ -1,5 +1,4 @@
-import os, time, git
-from socket import socket
+import os, time, git, re
 from datetime import datetime
 from git.objects.commit import Commit 
 import urllib.parse
@@ -14,7 +13,15 @@ fileTyp = {'py':'Python','cpp':'C++','c':'C','js':'JavaScript','java':'Java'}
 totalSolved = 0
 dir_path = os.path.dirname(os.path.realpath(__file__))
 repo = git.Repo(dir_path)
-            
+
+now = datetime.now()
+date_time_str = now.strftime("%d/%m/%Y")
+
+nfile = open(str(dir_path)+"/README.md", "r")
+last_line = nfile.readlines()[-4]
+date_is = re.findall(r"-[0-9]+",last_line)
+totalSolved_0 = str(date_is[0])[1:]
+nfile.close()
 
 readme_file = open('README.md', 'w')
 readme_file.write(""" 
@@ -31,7 +38,6 @@ readme_file.write("""
 <p align="left">
     <img src="https://img.shields.io/badge/Language-Python-orange.svg">
     <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
-    <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
 </p>
 """)
 
@@ -96,7 +102,25 @@ for f in sorted_folders:
             table_of_contents.close()
             # ----------End of making take of content -------------------
 
-print('Total:',totalSolved)
+print('New total:',totalSolved)
+print('Old total:', totalSolved_0)
+
+readme_file.write('\n')
+readme_file.write('\n')
+
+if str(totalSolved_0) != totalSolved:
+    readme_file.write(f"""<p align="left">
+        <img src="https://img.shields.io/badge/Problems%20Solved-{totalSolved}-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-{str(date_time_str)}-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
+    </p>""")
+else:
+    readme_file.write(f"""<p align="left">
+        <img src="https://img.shields.io/badge/Problems%20Solved-13-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-01/09/2022-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
+    </p>""")
+
 readme_file.close()
 time.sleep(1)
 
@@ -110,12 +134,11 @@ markdown.markdownFromFile(
 print('Done writing index.html')
 
 # Push to GitHub
-
-# commit_message = "Updated by automated commit 🤖"
-# repo.git.add('--all')
-# repo.git.commit('-m', commit_message, author='Shakib')
-# print('[*] Pushing......')
-# origin = repo.remote(name='origin')
-# origin.push()
+commit_message = "Updated by automated commit 🤖"
+repo.git.add('--all')
+repo.git.commit('-m', commit_message, author='Shakib')
+print('[*] Pushing......')
+origin = repo.remote(name='origin')
+origin.push()
 
 print("[=] Successfull")
