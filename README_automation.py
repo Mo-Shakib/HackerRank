@@ -18,9 +18,12 @@ now = datetime.now()
 date_time_str = now.strftime("%d/%m/%Y")
 
 nfile = open(str(dir_path)+"/README.md", "r")
-last_line = nfile.readlines()[-4]
-date_is = re.findall(r"-[0-9]+",last_line)
-totalSolved_0 = str(date_is[0])[1:]
+total_solve_line = nfile.readlines()[-4]
+date_line = nfile.readline()[-3]
+
+totalSolved_0 = re.findall(r"-[0-9]+",total_solve_line)[0][1:]
+last_update_date_0 = re.findall(r"\-[0-9,/]+",date_line)[0][1:]
+
 nfile.close()
 
 readme_file = open('README.md', 'w')
@@ -99,7 +102,7 @@ for f in sorted_folders:
                     fileName = urllib.parse.quote(i)
                     tablefilename = i.split('.')[0]
                     f_type = i.split('.')[-1]
-                    table_of_contents.write(f'- :page_facing_up: __{tablefilename.capitalize()}__ - [{fileTyp[f_type]}]({fileName})\n')
+                    table_of_contents.write(f'1. __{tablefilename.capitalize()}__ - [{fileTyp[f_type]}]({fileName})\n')
             table_of_contents.close()
             # ----------End of making take of content -------------------
 
@@ -117,8 +120,8 @@ if str(totalSolved_0) != totalSolved:
     </p>""")
 else:
     readme_file.write(f"""<p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-13-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-01/09/2022-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Problems%20Solved-{totalSolved_0}-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-{last_update_date_0}-brightgreen.svg">
         <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
     </p>""")
 
