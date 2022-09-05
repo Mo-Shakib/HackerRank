@@ -41,7 +41,7 @@ readme_file.write("""
 </p>
 """)
 
-readme_file.write('\n')
+readme_file.write('<hr>')
 readme_file.write('\n')
 
 for root, subdirectories, files in os.walk(directory):
