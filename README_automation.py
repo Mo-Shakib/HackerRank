@@ -134,6 +134,10 @@ markdown.markdownFromFile(
 print('Done writing index.html')
 
 # Push to GitHub
+<<<<<<< HEAD
+=======
+
+>>>>>>> c9a15f2dc3e951cd1dc2b06d20b9b4212022785f
 commit_message = "Updated by automated commit 🤖"
 repo.git.add('--all')
 repo.git.commit('-m', commit_message, author='Shakib')
