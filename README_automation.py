@@ -39,9 +39,10 @@ readme_file.write("""
     <img src="https://img.shields.io/badge/Language-Python-orange.svg">
     <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
 </p>
+<hr>
 """)
 
-readme_file.write('<hr>')
+readme_file.write('\n')
 readme_file.write('\n')
 
 for root, subdirectories, files in os.walk(directory):
