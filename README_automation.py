@@ -1,4 +1,5 @@
 import os, time, git
+from socket import socket
 from datetime import datetime
 from git.objects.commit import Commit 
 import urllib.parse
@@ -27,10 +28,10 @@ readme_file.write("""
 <p align="center">
 	If you are interested in helping or have a solution in a different language feel free to make a pull request.
 </p>
-<p align="right">
-    <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
-    <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
+<p align="left">
     <img src="https://img.shields.io/badge/Language-Python-orange.svg">
+    <img src="https://wakatime.com/badge/user/8e02bfd3-85d8-4d9d-88df-fa983f91ff30/project/b82b047d-1e9b-4267-a6db-5430b5c24ed5.svg">
+    <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
 </p>
 """)
 
@@ -38,26 +39,36 @@ readme_file.write('\n')
 readme_file.write('\n')
 
 for root, subdirectories, files in os.walk(directory):
-    if any(folder in root for folder in w_folders) and len(subdirectories) > 1:
+    if any(folder in root for folder in w_folders) and len(subdirectories) > 0:
         subdirectories.sort(key=lambda x: int(x[0].split('/')[-1].split('.')[0]))
         folder_name = root.split('/')[-1]
         folderTree[folder_name] = subdirectories
-        
+
 dictionary_items = folderTree.items()
 sorted_folders = sorted(dictionary_items)
+
+print('All folders:',sorted_folders)
 
 for f in sorted_folders:
     # ---------- Writing parent folders ----------
     # f[0] ---> Parent folders
-
-    PF_name = urllib.parse.quote(f[0])
-    readme_file.write(f'# 📒 [{f[0].split(".")[1].lstrip()}]({PF_name})\n')
+    for i in f[1]:
+        filesPath = f'{directory}//{f[0]}//{i}'
+        filenames = next(os.walk(filesPath), (None, None, []))[2]
+    
+    if len(filenames) > 0:
+        PF_name = urllib.parse.quote(f[0])
+        readme_file.write(f'# 📒 [{f[0].split(".")[1].lstrip()}]({PF_name})\n')
+    
     if len(f[1]) > 0:
         # f[1] - stores all the sub-folders in the main folders
         for i in f[1]:
+            filesPath = f'{directory}//{f[0]}//{i}'
+            filenames = next(os.walk(filesPath), (None, None, []))[2]
             #------------- Writing sub folders ------------
-            subf_name = urllib.parse.quote(i)
-            readme_file.write(f'- ### 📁 [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
+            if len(filenames) > 1:
+                subf_name = urllib.parse.quote(i)
+                readme_file.write(f'- ### 📁 [{i.split(".")[1].lstrip()}]({PF_name}//{subf_name})\n')
             
             #------------- Making table of content ------------------
             filesPath = f'{directory}//{f[0]}//{i}'
@@ -100,11 +111,11 @@ print('Done writing index.html')
 
 # Push to GitHub
 
-commit_message = "Updated by automated commit 🤖"
-repo.git.add('--all')
-repo.git.commit('-m', commit_message, author='Shakib')
-print('[*] Pushing......')
-origin = repo.remote(name='origin')
-origin.push()
+# commit_message = "Updated by automated commit 🤖"
+# repo.git.add('--all')
+# repo.git.commit('-m', commit_message, author='Shakib')
+# print('[*] Pushing......')
+# origin = repo.remote(name='origin')
+# origin.push()
 
 print("[=] Successfull")
