@@ -111,11 +111,11 @@ print('Done writing index.html')
 
 # Push to GitHub
 
-# commit_message = "Updated by automated commit 🤖"
-# repo.git.add('--all')
-# repo.git.commit('-m', commit_message, author='Shakib')
-# print('[*] Pushing......')
-# origin = repo.remote(name='origin')
-# origin.push()
+commit_message = "Updated by automated commit 🤖"
+repo.git.add('--all')
+repo.git.commit('-m', commit_message, author='Shakib')
+print('[*] Pushing......')
+origin = repo.remote(name='origin')
+origin.push()
 
 print("[=] Successfull")
