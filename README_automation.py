@@ -19,12 +19,14 @@ date_time_str = now.strftime("%d/%m/%Y")
 
 nfile = open(str(dir_path)+"/README.md", "r")
 total_solve_line = nfile.readlines()[-4]
-date_line = nfile.readline()[-3]
+nfile.close()
+nfile = open(str(dir_path)+"/README.md", "r")
+date_line = nfile.readlines()[-3]
+nfile.close()
 
 totalSolved_0 = re.findall(r"-[0-9]+",total_solve_line)[0][1:]
 last_update_date_0 = re.findall(r"\-[0-9,/]+",date_line)[0][1:]
 
-nfile.close()
 
 readme_file = open('README.md', 'w')
 readme_file.write(""" 
@@ -88,9 +90,14 @@ for f in sorted_folders:
             for j in filenames:
                 if j not in ignoreFiles:
                     fileName = urllib.parse.quote(j)
+
+                    inFile = open(f"{f[0]}/{i}/{j}", "r")
+                    url = inFile.readline().split()[-1]
+                    inFile.close()
+                    
                     tablefilename = j.split('.')[0]
                     f_type = j.split('.')[-1]
-                    readme_file.write(f'	- [x] 📃 [_{tablefilename.capitalize()}_]({PF_name}/{subf_name}/{fileName})\n')
+                    readme_file.write(f'	- [x] 📃 [{tablefilename.capitalize()}]({url}) - [_Solution_]({PF_name}/{subf_name}/{fileName})\n')
                     totalSolved += 1
             # ------- End of writing index to main readme file -------
             
@@ -138,11 +145,11 @@ markdown.markdownFromFile(
 print('Done writing index.html')
 
 # Push to GitHub
-commit_message = "Updated by automated commit 🤖"
-repo.git.add('--all')
-repo.git.commit('-m', commit_message, author='Shakib')
-print('[*] Pushing......')
-origin = repo.remote(name='origin')
-origin.push()
+# commit_message = "Updated by automated commit 🤖"
+# repo.git.add('--all')
+# repo.git.commit('-m', commit_message, author='Shakib')
+# print('[*] Pushing......')
+# origin = repo.remote(name='origin')
+# origin.push()
 
 print("[=] Successfull")
