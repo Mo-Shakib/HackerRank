@@ -1,6 +1,6 @@
 ### Table of Contents
-- :page_facing_up: __Cats and a mouse__ - [Python](Cats%20and%20a%20Mouse.py)
-- :page_facing_up: __Bill division__ - [Python](Bill%20Division.py)
-- :page_facing_up: __Number line jumps__ - [Python](Number%20Line%20Jumps.py)
-- :page_facing_up: __Grading students__ - [Python](Grading%20Students.py)
-- :page_facing_up: __Apple and orange__ - [Python](Apple%20and%20Orange.py)
+1. __Cats and a mouse__ - [Python](Cats%20and%20a%20Mouse.py)
+1. __Bill division__ - [Python](Bill%20Division.py)
+1. __Number line jumps__ - [Python](Number%20Line%20Jumps.py)
+1. __Grading students__ - [Python](Grading%20Students.py)
+1. __Apple and orange__ - [Python](Apple%20and%20Orange.py)
