@@ -97,7 +97,7 @@ for f in sorted_folders:
                     
                     tablefilename = j.split('.')[0]
                     f_type = j.split('.')[-1]
-                    readme_file.write(f'	- [x] 📃 [{tablefilename.capitalize()}]({url}) - [_Solution_]({PF_name}/{subf_name}/{fileName})\n')
+                    readme_file.write(f'	- [x] 📃 [{tablefilename.capitalize()}]({url}) - [___Solution___]({PF_name}/{subf_name}/{fileName})\n')
                     totalSolved += 1
             # ------- End of writing index to main readme file -------
             
