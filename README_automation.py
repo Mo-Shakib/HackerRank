@@ -127,12 +127,12 @@ if str(totalSolved_0) != str(totalSolved):
         <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
     </p>""")
 else:
-	print("----------- No new file ------------")
+    print('----------- No new file ------------')
     readme_file.write(f"""<p align="left">
         <img src="https://img.shields.io/badge/Problems%20Solved-{totalSolved_0}-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-{last_update_date_0}-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-{str(last_update_date_0)}-brightgreen.svg">
         <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
-    </p>""")
+        </p>""")
 
 readme_file.close()
 time.sleep(1)
