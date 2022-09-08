@@ -119,13 +119,15 @@ print('Old total:', totalSolved_0)
 readme_file.write('\n')
 readme_file.write('<hr>')
 
-if str(totalSolved_0) != totalSolved:
+if str(totalSolved_0) != str(totalSolved):
+	print("--------- New files added ---------")
     readme_file.write(f"""<p align="left">
         <img src="https://img.shields.io/badge/Problems%20Solved-{totalSolved}-brightgreen.svg">
         <img src="https://img.shields.io/badge/Latest%20Update-{str(date_time_str)}-brightgreen.svg">
         <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
     </p>""")
 else:
+	print("----------- No new file ------------")
     readme_file.write(f"""<p align="left">
         <img src="https://img.shields.io/badge/Problems%20Solved-{totalSolved_0}-brightgreen.svg">
         <img src="https://img.shields.io/badge/Latest%20Update-{last_update_date_0}-brightgreen.svg">
