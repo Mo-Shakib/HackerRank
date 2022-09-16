@@ -1,6 +1,11 @@
 ### Table of Contents
 1. __Cats and a mouse__ - [Python](Cats%20and%20a%20Mouse.py)
+1. __Divisible sum pairs__ - [Python](Divisible%20Sum%20Pairs.py)
+1. __Between two sets__ - [Python](Between%20Two%20Sets.py)
+1. __Subarray division__ - [Python](Subarray%20Division.py)
+1. __Migratory birds__ - [Python](Migratory%20Birds.py)
 1. __Bill division__ - [Python](Bill%20Division.py)
 1. __Number line jumps__ - [Python](Number%20Line%20Jumps.py)
+1. __Breaking the records__ - [Python](Breaking%20the%20Records.py)
 1. __Grading students__ - [Python](Grading%20Students.py)
 1. __Apple and orange__ - [Python](Apple%20and%20Orange.py)
