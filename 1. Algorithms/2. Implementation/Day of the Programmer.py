@@ -6,5 +6,8 @@
 # The function accepts INTEGER year as parameter.
 #
 
+# Write your code here
 def dayOfProgrammer(year):
-    # Write your code here
+    if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+        return f'12.09.{year}'
+    return f'13.09.{year}'
