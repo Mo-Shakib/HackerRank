@@ -1,5 +1,6 @@
 ### Table of Contents
 1. __Cats and a mouse__ - [Python](Cats%20and%20a%20Mouse.py)
+1. __Day of the programmer__ - [Python](Day%20of%20the%20Programmer.py)
 1. __Divisible sum pairs__ - [Python](Divisible%20Sum%20Pairs.py)
 1. __Between two sets__ - [Python](Between%20Two%20Sets.py)
 1. __Subarray division__ - [Python](Subarray%20Division.py)

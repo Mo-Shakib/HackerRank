@@ -29,6 +29,7 @@
 	- [x] 📃 [Simple array sum](https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true) - [___Solution___](1.%20Algorithms/1.%20Warmup/Simple%20Array%20Sum.py)
 - ### 📁 [Implementation](1.%20Algorithms//2.%20Implementation)
 	- [x] 📃 [Cats and a mouse](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?isFullScreen=true) - [___Solution___](1.%20Algorithms/2.%20Implementation/Cats%20and%20a%20Mouse.py)
+	- [x] 📃 [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem?h_r=next-challenge&h_v=legacy) - [___Solution___](1.%20Algorithms/2.%20Implementation/Day%20of%20the%20Programmer.py)
 	- [x] 📃 [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Divisible%20Sum%20Pairs.py)
 	- [x] 📃 [Between two sets](https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Between%20Two%20Sets.py)
 	- [x] 📃 [Subarray division](https://www.hackerrank.com/challenges/the-birthday-bar/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Subarray%20Division.py)
@@ -42,9 +43,11 @@
 - ### 📁 [Arrays](2.%20Data%20Structures//1.%20Arrays)
 	- [x] 📃 [Left rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem?isFullScreen=true) - [___Solution___](2.%20Data%20Structures/1.%20Arrays/Left%20Rotation.py)
 # 📒 [Mathematics](3.%20Mathematics)
+- ### 📁 [Fundamentals](3.%20Mathematics//1.%20Fundamentals)
+	- [x] 📃 [Find the point](https://www.hackerrank.com/challenges/find-point/problem) - [___Solution___](3.%20Mathematics/1.%20Fundamentals/Find%20the%20Point.py)
 
 <hr><p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-20-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-14/09/2022-brightgreen.svg">
-        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
-        </p>
+        <img src="https://img.shields.io/badge/Problems%20Solved-22-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-16/09/2022-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
+    </p>
