@@ -3,6 +3,8 @@
 1. __Day of the programmer__ - [Python](Day%20of%20the%20Programmer.py)
 1. __Divisible sum pairs__ - [Python](Divisible%20Sum%20Pairs.py)
 1. __Between two sets__ - [Python](Between%20Two%20Sets.py)
+1. __Drawing book__ - [Python](Drawing%20Book.py)
+1. __Sales by match__ - [Python](Sales%20by%20Match.py)
 1. __Subarray division__ - [Python](Subarray%20Division.py)
 1. __Migratory birds__ - [Python](Migratory%20Birds.py)
 1. __Bill division__ - [Python](Bill%20Division.py)
