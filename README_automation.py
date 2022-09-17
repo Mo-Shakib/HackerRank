@@ -31,7 +31,7 @@ last_update_date_0 = re.findall(r"\-[0-9,/]+",date_line)[0][1:]
 readme_file = open('README.md', 'w')
 readme_file.write(""" 
 <p align="center">
-	<a href="https://www.hackerrank.com/mo_shakib"><img src="https://cloud.githubusercontent.com/assets/19765741/25342064/d17a563c-28d8-11e7-83fc-763d4ab4820a.jpg" ></a>
+	<a href="https://www.hackerrank.com/mo_shakib"><img src="https://i.imgur.com/B8eh8bv.png" ></a>
 </p>
 <p align="center">
    <b> Solutions to problems on HackerRank. </b>
