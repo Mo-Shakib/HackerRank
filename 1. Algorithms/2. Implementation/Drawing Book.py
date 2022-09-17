@@ -12,6 +12,10 @@ import math
 
 # Write your code here
 def pageCount(n, p):
-    if n % 2 == 1 and (p == (n - 1)):
+    if (n % 2 == 1 and (p == (n - 1))) or (n == p):
         return 0
+
+    elif n % 2 == 1:
+        return int(min(math.ceil(abs(1 - p)/2),math.ceil(abs((n-1) - p)/2)))
+
     return int(min(math.ceil(abs(1 - p)/2),math.ceil(abs(n - p)/2)))
