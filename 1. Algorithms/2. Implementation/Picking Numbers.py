@@ -9,6 +9,7 @@
 def pickingNumbers(a):
     # Write your code here
     a = sorted(a)
+    
     subarray = 1
     lengths = []
     prev = a[0]
@@ -21,7 +22,7 @@ def pickingNumbers(a):
             lengths.append(subarray)
             subarray = 1
     
-    return max(lengths)
+    if len(lengths) != 0:
+        return max(lengths)
     
-
-print(pickingNumbers([4,6,5,3,3,1]))
+    return subarray
