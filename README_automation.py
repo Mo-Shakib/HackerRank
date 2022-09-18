@@ -7,7 +7,7 @@ import markdown
 directory = os.path.dirname(os.path.realpath(__file__))
 
 folderTree = {}
-w_folders = ['1. Algorithms', '2. Data Structures','3. Mathematics']
+w_folders = ['1. Algorithms', '2. Data Structures','3. Mathematics','4. 1 Week Preparation Kit']
 ignoreFiles = ['.DS_Store', 'README.md','index.html']
 fileTyp = {'py':'Python','cpp':'C++','c':'C','js':'JavaScript','java':'Java'}
 totalSolved = 0
