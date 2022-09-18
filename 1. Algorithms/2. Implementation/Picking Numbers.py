@@ -9,24 +9,19 @@
 def pickingNumbers(a):
     # Write your code here
     a = sorted(a)
-    subarray = []
+    subarray = 1
     lengths = []
     prev = a[0]
-    subarray.append(prev)
+
     for i in a[1:]:
         if abs(i - prev) <= 1:
-            subarray.append(i)
+            subarray += 1
         else:
             prev = i
-            lengths.append(len(subarray))
-            subarray.clear()
-            subarray.append(prev)
+            lengths.append(subarray)
+            subarray = 1
     
     return max(lengths)
     
-
-
-
-
 
 print(pickingNumbers([4,6,5,3,3,1]))
