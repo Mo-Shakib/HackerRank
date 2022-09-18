@@ -1,6 +1,6 @@
  
 <p align="center">
-	<a href="https://www.hackerrank.com/mo_shakib"><img src="https://cloud.githubusercontent.com/assets/19765741/25342064/d17a563c-28d8-11e7-83fc-763d4ab4820a.jpg" ></a>
+	<a href="https://www.hackerrank.com/mo_shakib"><img src="https://i.imgur.com/B8eh8bv.png" ></a>
 </p>
 <p align="center">
    <b> Solutions to problems on HackerRank. </b>
@@ -32,6 +32,8 @@
 	- [x] 📃 [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem?h_r=next-challenge&h_v=legacy) - [___Solution___](1.%20Algorithms/2.%20Implementation/Day%20of%20the%20Programmer.py)
 	- [x] 📃 [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Divisible%20Sum%20Pairs.py)
 	- [x] 📃 [Between two sets](https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Between%20Two%20Sets.py)
+	- [x] 📃 [Drawing book](https://www.hackerrank.com/challenges/drawing-book/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Drawing%20Book.py)
+	- [x] 📃 [Sales by match](https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true) - [___Solution___](1.%20Algorithms/2.%20Implementation/Sales%20by%20Match.py)
 	- [x] 📃 [Subarray division](https://www.hackerrank.com/challenges/the-birthday-bar/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Subarray%20Division.py)
 	- [x] 📃 [Migratory birds](https://www.hackerrank.com/challenges/migratory-birds/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Migratory%20Birds.py)
 	- [x] 📃 [Bill division](hackerrank.com/challenges/bon-appetit/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Bill%20Division.py)
@@ -47,7 +49,7 @@
 	- [x] 📃 [Find the point](https://www.hackerrank.com/challenges/find-point/problem) - [___Solution___](3.%20Mathematics/1.%20Fundamentals/Find%20the%20Point.py)
 
 <hr><p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-22-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-16/09/2022-brightgreen.svg">
-        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
-    </p>
+        <img src="https://img.shields.io/badge/Problems%20Solved-24-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-17/09/2022-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
+        </p>
