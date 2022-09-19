@@ -50,12 +50,21 @@
 # 📒 [Data Structures](2.%20Data%20Structures)
 - ### 📁 [Arrays](2.%20Data%20Structures//1.%20Arrays)
 	- [x] 📃 [Left rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem?isFullScreen=true) - [___Solution___](2.%20Data%20Structures/1.%20Arrays/Left%20Rotation.py)
+	- [x] 📃 [2d array - ds](https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=false) - [___Solution___](2.%20Data%20Structures/1.%20Arrays/2D%20Array%20-%20DS.py)
 # 📒 [Mathematics](3.%20Mathematics)
 - ### 📁 [Fundamentals](3.%20Mathematics//1.%20Fundamentals)
 	- [x] 📃 [Find the point](https://www.hackerrank.com/challenges/find-point/problem) - [___Solution___](3.%20Mathematics/1.%20Fundamentals/Find%20the%20Point.py)
+# 📒 [Preparation Kits](4.%20Preparation%20Kits)
+- ### 📁 [1 Week Preparation Kit](4.%20Preparation%20Kits//1.%201%20Week%20Preparation%20Kit)
+	- [x] 📃 [Time conversion](https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Time%20Conversion.py)
+	- [x] 📃 [Plus minus](https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Plus%20Minus.py)
+	- [x] 📃 [Mock test - 1](https://www.hackerrank.com/interview/preparation-kits/one-week-preparation-kit/one-week-day-one/challenges) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Mock%20Test%20-%201.py)
+	- [x] 📃 [Lonely integer](https://www.hackerrank.com/challenges/one-week-preparation-kit-lonely-integer/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-two) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Lonely%20Integer.py)
+	- [x] 📃 [Mini-max sum](https://www.hackerrank.com/challenges/one-week-preparation-kit-mini-max-sum/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one&h_r=next-challenge&h_v=zen) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Mini-Max%20Sum.py)
+	- [x] 📃 [Diagonal difference](https://www.hackerrank.com/challenges/one-week-preparation-kit-diagonal-difference/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-two) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Diagonal%20Difference.py)
 
 <hr><p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-30-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-18/09/2022-brightgreen.svg">
-        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
-    </p>
+        <img src="https://img.shields.io/badge/Problems%20Solved-37-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-19/09/2022-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
+        </p>
