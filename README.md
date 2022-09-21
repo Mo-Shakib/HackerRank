@@ -67,5 +67,5 @@
 <hr><p align="left">
         <img src="https://img.shields.io/badge/Problems%20Solved-38-brightgreen.svg">
         <img src="https://img.shields.io/badge/Latest%20Update-20/09/2022-brightgreen.svg">
-        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
-    </p>
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
+        </p>
