@@ -9,7 +9,6 @@
 #
 
 def repeatedString(s, n):
-    if len(s) < n:
-        s = (s * ((10 // len(s))+1))[:n]
-        return s.count('a')
-    return s.count('a')
+    if len(s) > n:
+        return s[:n].count('a')
+    return s.count('a') * (n // len(s)) + s[:n%len(s)].count('a')
