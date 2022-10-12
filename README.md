@@ -39,9 +39,12 @@
 	- [x] 📃 [Between two sets](https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Between%20Two%20Sets.py)
 	- [x] 📃 [Electronics shop](https://www.hackerrank.com/challenges/electronics-shop/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Electronics%20Shop.py)
 	- [x] 📃 [Sales by match](https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true) - [___Solution___](1.%20Algorithms/2.%20Implementation/Sales%20by%20Match.py)
+	- [x] 📃 [Beautiful days at the movies](https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=false&h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Beautiful%20Days%20at%20the%20Movies.py)
 	- [x] 📃 [Bill division](hackerrank.com/challenges/bon-appetit/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Bill%20Division.py)
 	- [x] 📃 [The hurdle race](https://www.hackerrank.com/challenges/the-hurdle-race/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/The%20Hurdle%20Race.py)
 	- [x] 📃 [Grading students](https://www.hackerrank.com/challenges/grading/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Grading%20Students.py)
+	- [x] 📃 [Repeated string](https://www.hackerrank.com/challenges/repeated-string/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Repeated%20String.py)
+	- [x] 📃 [Angry professor](https://www.hackerrank.com/challenges/angry-professor/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Angry%20Professor.py)
 	- [x] 📃 [Apple and orange](https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Apple%20and%20Orange.py)
 	- [x] 📃 [Drawing book](https://www.hackerrank.com/challenges/drawing-book/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Drawing%20Book.py)
 	- [x] 📃 [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Divisible%20Sum%20Pairs.py)
@@ -65,7 +68,7 @@
 	- [x] 📃 [Time conversion](https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Time%20Conversion.py)
 
 <hr><p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-38-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-20/09/2022-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Problems%20Solved-41-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-08/10/2022-brightgreen.svg">
         <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
         </p>
