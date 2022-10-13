@@ -4,6 +4,7 @@
 1. __Counting valleys__ - [Python](Counting%20Valleys.py)
 1. __Picking numbers__ - [Python](Picking%20Numbers.py)
 1. __Cats and a mouse__ - [Python](Cats%20and%20a%20Mouse.py)
+1. __Find digits__ - [Python](Find%20Digits.py)
 1. __Day of the programmer__ - [Python](Day%20of%20the%20Programmer.py)
 1. __Breaking the records__ - [Python](Breaking%20the%20Records.py)
 1. __Subarray division__ - [Python](Subarray%20Division.py)

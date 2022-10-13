@@ -33,6 +33,7 @@
 	- [x] 📃 [Counting valleys](https://www.hackerrank.com/challenges/counting-valleys/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Counting%20Valleys.py)
 	- [x] 📃 [Picking numbers](https://www.hackerrank.com/challenges/picking-numbers/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Picking%20Numbers.py)
 	- [x] 📃 [Cats and a mouse](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?isFullScreen=true) - [___Solution___](1.%20Algorithms/2.%20Implementation/Cats%20and%20a%20Mouse.py)
+	- [x] 📃 [Find digits](https://www.hackerrank.com/challenges/find-digits/problem?isFullScreen=false) - [___Solution___](1.%20Algorithms/2.%20Implementation/Find%20Digits.py)
 	- [x] 📃 [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem?h_r=next-challenge&h_v=legacy) - [___Solution___](1.%20Algorithms/2.%20Implementation/Day%20of%20the%20Programmer.py)
 	- [x] 📃 [Breaking the records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Breaking%20the%20Records.py)
 	- [x] 📃 [Subarray division](https://www.hackerrank.com/challenges/the-birthday-bar/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](1.%20Algorithms/2.%20Implementation/Subarray%20Division.py)
@@ -68,7 +69,7 @@
 	- [x] 📃 [Time conversion](https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen) - [___Solution___](4.%20Preparation%20Kits/1.%201%20Week%20Preparation%20Kit/Time%20Conversion.py)
 
 <hr><p align="left">
-        <img src="https://img.shields.io/badge/Problems%20Solved-41-brightgreen.svg">
-        <img src="https://img.shields.io/badge/Latest%20Update-08/10/2022-brightgreen.svg">
-        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">    
-        </p>
+        <img src="https://img.shields.io/badge/Problems%20Solved-42-brightgreen.svg">
+        <img src="https://img.shields.io/badge/Latest%20Update-13/10/2022-brightgreen.svg">
+        <img src="https://github.com/Mo-Shakib/HackerRank/actions/workflows/README_automation.yml/badge.svg">
+    </p>
