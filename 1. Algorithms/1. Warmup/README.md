@@ -1,7 +1,7 @@
 ### Table of Contents
-1. __A very big sum__ - [Python](A%20Very%20Big%20Sum.py)
 1. __Staircase__ - [Python](Staircase.py)
 1. __Birthday cake candles__ - [Python](Birthday%20Cake%20Candles.py)
+1. __A very big sum__ - [Python](A%20Very%20Big%20Sum.py)
 1. __Time conversion__ - [Python](Time%20Conversion.py)
 1. __Simple array sum__ - [Python](Simple%20Array%20Sum.py)
 1. __Diagonal difference__ - [Python](Diagonal%20Difference.py)
